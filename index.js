@@ -4,6 +4,7 @@ const cron = require('node-cron')
 const mongoose = require('mongoose');
 const TelegramApi = require('node-telegram-bot-api');
 const User = require('./user');
+require('dotenv').config()
 
 const db_url = process.env.DB_URL;
 const token = process.env.TOKEN;
